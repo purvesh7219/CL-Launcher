@@ -50,7 +50,7 @@ configurations {
 }
 
 android {
-    namespace 'F MC LAUNCHER'
+    namespace 'FAST_MC_LAUNCHER'
 
     compileSdk = 36
 
