@@ -47,6 +47,7 @@
 
         <activity
             android:name="net.kdt.pojavlaunch.TestStorageActivity"
+            android:screenOrientation="landscape"
             android:exported="true"
             android:label="@string/app_short_name"
             android:launchMode="singleTop">
