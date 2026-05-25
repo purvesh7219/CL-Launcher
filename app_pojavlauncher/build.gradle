@@ -50,7 +50,7 @@ configurations {
 }
 
 android {
-    namespace 'git.artmeil.mojo'
+    namespace 'git.artdeell.mojo'
 
     compileSdk = 36
 
@@ -71,10 +71,16 @@ android {
             keyAlias "key0"
             keyPassword System.getenv("UPLOAD_KEYSTORE_PASSWORD")
         }
+        publicBuild {
+            storeFile file("mojo_pub.jks")
+            storePassword System.getenv("MOJOPUB_KEYSTORE_PASSWORD")
+            keyAlias "key0"
+            keyPassword System.getenv("MOJOPUB_KEYSTORE_PASSWORD")
+        }
     }
 
     defaultConfig {
-        applicationId "git.artmeil.mojo"
+        applicationId "git.artdeell.mojo"
         minSdkVersion 21
         targetSdkVersion 36
         versionCode getDateSeconds()
@@ -129,6 +135,13 @@ android {
         gplay {
             initWith release
             signingConfig signingConfigs.googlePlayBuild
+        }
+        pubRelease {
+            initWith release
+            signingConfig signingConfigs.customDebug // WIP, changeme
+            applicationIdSuffix '.pub'
+            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.pub.scoped.gamefolder'
+            resValue 'string', 'application_package', 'git.artdeell.mojo.pub'
         }
     }
 
