@@ -123,8 +123,8 @@ android {
             // defaultConfig already set
             // multiDexEnabled = true
             // debuggable = true
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder'
-            resValue 'string', 'application_package', 'git.artdeell.mojo'
+            resValue 'string', 'storageProviderAuthorities', 'FAST.MC.LAUNCHER'
+            resValue 'string', 'application_package', 'FAST.MC.LAUNCHER'
         }
         gplay {
             initWith release
