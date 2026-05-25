@@ -104,7 +104,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.customDebug
             resValue 'string', 'application_package', 'FAST.MC.LAUNCHER'
-            resValue 'string', 'storageProviderAuthorities', 'FAST.MC.LAUMCHER'
+            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder.debug'
         }
         proguard {
             initWith debug
