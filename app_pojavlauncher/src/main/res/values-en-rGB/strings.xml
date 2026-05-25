@@ -2,7 +2,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
     <string name="app_name">FAST MC LAUNCHER (Minecraft: Java Edition for Android)</string>
-    <string name="app_short_name">F MC LAUNCHER</string>
+    <string name="app_short_name">FAST MC LAUNCHER</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -13,7 +13,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Select a mod installer</string>
     <!-- Error messages -->
-    <string name="error_fatal">MojoLauncher has unexpectedly crashed</string>
+    <string name="error_fatal">The FAST MC was unexpectedly crashed</string>
     <string name="error_no_version">No version!</string>
     <string name="error_show_more">Show more</string>
     <string name="error_show_less">Show less</string>
