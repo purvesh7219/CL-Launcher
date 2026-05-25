@@ -74,7 +74,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "git.artdeell.mojo"
+        applicationId "FAST_MC_LAUNCHER"
         minSdkVersion 21
         targetSdkVersion 36
         versionCode getDateSeconds()
@@ -103,7 +103,7 @@ android {
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.customDebug
-            resValue 'string', 'application_package', 'git.artdeell.mojo.debug'
+            resValue 'string', 'application_package', 'FAST.MC.LAUNCHER'
             resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder.debug'
         }
         proguard {
