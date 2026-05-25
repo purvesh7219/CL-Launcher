@@ -50,7 +50,7 @@ configurations {
 }
 
 android {
-    namespace 'FAST.MC.LAUNCHER'
+    namespace 'git.artmeil.mojo'
 
     compileSdk = 36
 
@@ -74,7 +74,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "FAST_MC_LAUNCHER"
+        applicationId "git.artmeil.mojo"
         minSdkVersion 21
         targetSdkVersion 36
         versionCode getDateSeconds()
