@@ -1,6 +1,6 @@
 package net.kdt.pojavlaunch;
 
-import static android.content.res.Configuration.ORIENTATION_PORTRAIT;
+import static android.content.res.Configuration.ORIENTATION_LANDSCAPE;
 import android.Manifest;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -155,7 +155,7 @@ public class LauncherActivity extends BaseActivity {
 
     @Override
     protected boolean shouldIgnoreNotch() {
-        return getResources().getConfiguration().orientation == ORIENTATION_PORTRAIT;
+        return getResources().getConfiguration().orientation == ORIENTATION_LANDSCAPE;
     }
 
     @Override
