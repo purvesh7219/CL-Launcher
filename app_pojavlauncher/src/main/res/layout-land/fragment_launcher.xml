@@ -26,36 +26,6 @@
             android:gravity="center_horizontal">
 
             <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/custom_control_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="@dimen/_52sdp"
-                android:layout_height="@dimen/_42sdp"
-                android:layout_marginBottom="6dp"
-                android:gravity="center"
-                android:padding="0dp"
-                android:drawableStart="@drawable/ic_px_gamepad" />
-
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/install_jar_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="@dimen/_52sdp"
-                android:layout_height="@dimen/_42sdp"
-                android:layout_marginBottom="6dp"
-                android:gravity="center"
-                android:padding="0dp"
-                android:drawableStart="@drawable/ic_px_java_run" />
-
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/open_files_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="@dimen/_52sdp"
-                android:layout_height="@dimen/_42sdp"
-                android:layout_marginBottom="6dp"
-                android:gravity="center"
-                android:padding="0dp"
-                android:drawableStart="@drawable/ic_px_folder" />
-
-            <com.kdt.mcgui.LauncherMenuButton
                 android:id="@+id/share_logs_button"
                 style="@style/LauncherMenuButton.Universal"
                 android:layout_width="@dimen/_52sdp"
@@ -96,38 +66,93 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/_background_display_view" />
 
-    <LinearLayout
-        android:id="@+id/center_instance_box"
+    <GridLayout
+        android:id="@+id/button_grid_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:padding="12dp"
+        android:columnCount="2"
+        android:rowCount="2"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/border_outline"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/sidebar_divider">
 
-        <com.kdt.mcgui.mcVersionSpinner
-            android:id="@+id/mc_version_spinner"
-            android:layout_width="220dp"
-            android:layout_height="@dimen/_36sdp"
-            android:background="@android:color/transparent"
-            android:drawableEnd="@drawable/spinner_arrow"
-            app:drawableEndPadding="@dimen/_1sdp"
-            app:drawableEndSize="@dimen/_12sdp"
-            app:drawableStartIntegerScaling="true"
-            app:drawableStartSize="@dimen/_36sdp" />
+        <LinearLayout
+            android:id="@+id/center_instance_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/border_outline">
 
-        <ImageButton
-            android:id="@+id/edit_profile_button"
-            android:layout_width="@dimen/_32sdp"
-            android:layout_height="@dimen/_32sdp"
-            android:layout_marginStart="8dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:src="@drawable/ic_px_edit" />
-    </LinearLayout>
+            <com.kdt.mcgui.mcVersionSpinner
+                android:id="@+id/mc_version_spinner"
+                android:layout_width="220dp"
+                android:layout_height="@dimen/_36sdp"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/spinner_arrow"
+                app:drawableEndPadding="@dimen/_1sdp"
+                app:drawableEndSize="@dimen/_12sdp"
+                app:drawableStartIntegerScaling="true"
+                app:drawableStartSize="@dimen/_36sdp" />
+
+            <ImageButton
+                android:id="@+id/edit_profile_button"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginStart="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_px_edit" />
+        </LinearLayout>
+
+        <com.kdt.mcgui.LauncherMenuButton
+            android:id="@+id/custom_control_button"
+            style="@style/LauncherMenuButton.Universal"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:gravity="center_vertical|start"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="Custom Control"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/border_outline"
+            android:drawableStart="@drawable/ic_px_gamepad"
+            android:drawablePadding="8dp" />
+
+        <com.kdt.mcgui.LauncherMenuButton
+            android:id="@+id/install_jar_button"
+            style="@style/LauncherMenuButton.Universal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_margin="6dp"
+            android:gravity="center_vertical|start"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="Execute (.jar)"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/border_outline"
+            android:drawableStart="@drawable/ic_px_java_run"
+            android:drawablePadding="8dp" />
+
+        <com.kdt.mcgui.LauncherMenuButton
+            android:id="@+id/open_files_button"
+            style="@style/LauncherMenuButton.Universal"
+            android:layout_width="160dp"
+            android:layout_height="52dp"
+            android:layout_margin="6dp"
+            android:gravity="center_vertical|start"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="Game Path"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/border_outline"
+            android:drawableStart="@drawable/ic_px_folder"
+            android:drawablePadding="8dp" />
+
+    </GridLayout>
 
     <View
         android:id="@+id/_background_display_view"
