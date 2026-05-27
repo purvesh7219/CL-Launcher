@@ -16,7 +16,6 @@
         android:background="#20000000"
         android:padding="4dp"
         app:layout_getTop="true"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/_background_display_view">
 
