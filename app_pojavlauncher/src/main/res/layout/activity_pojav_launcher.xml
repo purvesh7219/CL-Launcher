@@ -8,7 +8,7 @@
 
     <com.kdt.mcgui.AccountSpinner
         android:id="@+id/account_spinner"
-        android:layout_width="match_parentdp"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/_52sdp"
 
         android:dropDownWidth="@dimen/_250sdp"
