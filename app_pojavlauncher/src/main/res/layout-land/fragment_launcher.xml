@@ -79,18 +79,19 @@
 
         <LinearLayout
             android:id="@+id/center_instance_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="260dp"
+            android:layout_height="@dimen/_48sdp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="12dp"
+            android:padding="8dp"
             android:layout_margin="6dp"
             android:background="@drawable/border_outline">
 
             <com.kdt.mcgui.mcVersionSpinner
                 android:id="@+id/mc_version_spinner"
-                android:layout_width="220dp"
-                android:layout_height="@dimen/_36sdp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:drawableEnd="@drawable/spinner_arrow"
                 app:drawableEndPadding="@dimen/_1sdp"
@@ -102,7 +103,7 @@
                 android:id="@+id/edit_profile_button"
                 android:layout_width="@dimen/_32sdp"
                 android:layout_height="@dimen/_32sdp"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="4dp"
                 android:background="?android:attr/selectableItemBackground"
                 android:src="@drawable/ic_px_edit" />
         </LinearLayout>
@@ -110,8 +111,8 @@
         <com.kdt.mcgui.LauncherMenuButton
             android:id="@+id/custom_control_button"
             style="@style/LauncherMenuButton.Universal"
-            android:layout_width="160dp"
-            android:layout_height="match_parent"
+            android:layout_width="260dp"
+            android:layout_height="@dimen/_48sdp"
             android:layout_margin="6dp"
             android:gravity="center_vertical|start"
             android:paddingStart="12dp"
@@ -125,8 +126,8 @@
         <com.kdt.mcgui.LauncherMenuButton
             android:id="@+id/install_jar_button"
             style="@style/LauncherMenuButton.Universal"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_width="260dp"
+            android:layout_height="@dimen/_48sdp"
             android:layout_margin="6dp"
             android:gravity="center_vertical|start"
             android:paddingStart="12dp"
@@ -140,8 +141,8 @@
         <com.kdt.mcgui.LauncherMenuButton
             android:id="@+id/open_files_button"
             style="@style/LauncherMenuButton.Universal"
-            android:layout_width="160dp"
-            android:layout_height="52dp"
+            android:layout_width="260dp"
+            android:layout_height="@dimen/_48sdp"
             android:layout_margin="6dp"
             android:gravity="center_vertical|start"
             android:paddingStart="12dp"
